@@ -1,44 +1,30 @@
+from Characters.Giovanna import Giovanna
+from Utils.Character import Dirs
 import vgamepad as vg
+from Utils.Inputs import Inputs
 import time
-gamepad = vg.VX360Gamepad()
-time.sleep(5)
-gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_A)
-gamepad.update()
-time.sleep(10)
-
-# press a button to wake the device up
-# gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_A)
-# gamepad.update()
-# gamepad.release_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_A)
-# gamepad.update()
-# time.sleep(0.5)
-
-# # press buttons and things
-# gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_A)
-# gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_LEFT_SHOULDER)
-# gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN)
-# gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_LEFT)
-# gamepad.left_trigger_float(value_float=0.5)
-# gamepad.right_trigger_float(value_float=0.5)
-# gamepad.left_joystick_float(x_value_float=0.0, y_value_float=0.2)
-
-# gamepad.update()
-
-# time.sleep(1.0)
-
-# # release buttons and things
-# gamepad.release_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_A)
-# gamepad.release_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_LEFT)
-# gamepad.right_trigger_float(value_float=0.0)
-# gamepad.right_joystick_float(x_value_float=0.0, y_value_float=0.0)
-
-# gamepad.update()
-
-# time.sleep(1.0)
-
-# # reset gamepad to default state
-# gamepad.reset()
-
-# gamepad.update()
-
-# time.sleep(1.0)
+dum=Dirs(False)
+gio=Giovanna(False)
+gio.press(Inputs.s)
+time.sleep(0.25)
+gio.press(gio.dir.down, Inputs.hs)
+time.sleep(0.25)
+gio.flip()
+time.sleep(1.25)
+gio.press(Inputs.s)
+time.sleep(0.65)
+gio.press(Inputs.hs)
+time.sleep(0.25)
+gio.WA()
+time.sleep(0.15)
+gio.dash()
+time.sleep(0.05)
+gio.press(Inputs.k)
+time.sleep(0.55)
+gio.press(gio.dir.up, gio.dir.forward)
+time.sleep(0.02)
+gio.press(Inputs.s)
+time.sleep(0.25)
+gio.press(Inputs.d)
+time.sleep(0.2)
+gio.press(gio.dir.up, gio.dir.forward)
