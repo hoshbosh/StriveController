@@ -2,7 +2,7 @@ from Utils.Character import Character
 import time
 import vgamepad as vg
 from Utils.Inputs import Inputs
-class sol(Character):
+class Sol(Character):
     def __init__(self, _leftRight):
         super().__init__(_leftRight)
     def gunFlame(self):
@@ -20,9 +20,9 @@ class sol(Character):
     def nightRaidVortex(self):
         self.qcb(Inputs.s)
     def fafnir(self):
-        self.hcf(Inputs.h)
+        self.hcf(Inputs.hs)
     def tyrantRave(self):
-        self.hcbf(Inputs.h)
+        self.hcbf(Inputs.hs)
     def heavyModCemetery(self):
         self.qcbEmpty()
         self.qcb(Inputs.hs)

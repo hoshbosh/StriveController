@@ -2,29 +2,26 @@ from Utils.Character import Character
 import time
 import vgamepad as vg
 from Utils.Inputs import Inputs
-class Ky(Character):
+class Sin(Character):
     def __init__(self, _leftRight):
         super().__init__(_leftRight)
-    def stunEdge(self):
-        self.qcf(Inputs.s)
-    def chargedStunEdge(self):
+    def beakDriver(self):
         self.qcf(Inputs.hs)
-    def stunDipper(self):
+    def hawkBaker(self):
+        self.dp(Inputs.s)
+    def elkHunt(self):
         self.qcf(Inputs.k)
-    def foudreArc(self):
-        self.qcb(Inputs.k)
-    def vaporThrust(self, button):
-        self.dp(button)
-    def direEclat(self):
+    def hoofStomp(self):
         self.qcb(Inputs.s)
+    def gazelleStep(self):
+        self.qcb(Inputs.k)
+    def stillGrowing(self):
+        self.hcb(Inputs.p)
     def RTL(self):
         self.hcbf(Inputs.hs)
-    def sacredEdge(self):
+    def tyrantBarrel(self):
         self.qcfEmpty()
         self.qcf(Inputs.p)
-    def DI(self):
-        self.qcbEmpty()
-        self.qcb(Inputs.hs)
     def h6(self):
         self.press(self.dir.forward, Inputs.hs)
     def k6(self):

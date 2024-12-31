@@ -2,7 +2,7 @@ from Utils.Character import Character
 import time
 import vgamepad as vg
 from Utils.Inputs import Inputs
-class ramlethal(Character):
+class Ramlethal(Character):
     def __init__(self, _leftRight):
         super().__init__(_leftRight)
     def ondo(self):

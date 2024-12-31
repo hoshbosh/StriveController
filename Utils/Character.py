@@ -58,6 +58,12 @@ class Character:
         self.press(self.dir.down, self.dir.back)
         self.press(self.dir.back)
         self.press(self.dir.forward, button)
+    def hcb(self, button):
+        self.press(self.dir.forward)
+        self.press(self.dir.down, self.dir.forward)
+        self.press(self.dir.down)
+        self.press(self.dir.down, self.dir.back)
+        self.press(self.dir.back, button)
     def hcf(self, button):
         self.press(self.dir.back)
         self.press(self.dir.down, self.dir.back)
