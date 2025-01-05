@@ -14,11 +14,13 @@ class Dirs():
 
 class Character: 
     dir: Dirs
+    airBorne:bool
     pad: vg.VX360Gamepad
     def __init__(self, _leftRight):
         self.dir=Dirs(_leftRight)
         self.pad=vg.VX360Gamepad()
         time.sleep(5)
+        airBorne=False
         # self.press(vg.XUSB_BUTTON.XUSB_GAMEPAD_START)
         print("gamepad made")
     def press(self, *args):
@@ -39,6 +41,8 @@ class Character:
         self.press(self.dir.down)
         self.press(self.dir.down, self.dir.forward)
         self.press(self.dir.forward, button)
+    def jump(self):
+        self.press(self.dir.up)
     def qcfEmpty(self):
         self.press(self.dir.down)
         self.press(self.dir.down, self.dir.forward)
