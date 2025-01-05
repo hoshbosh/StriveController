@@ -1,30 +1,8 @@
-from Characters.Giovanna import Giovanna
+from Characters.Potemkin import Potemkin
 from Utils.Character import Dirs
 import vgamepad as vg
 from Utils.Inputs import Inputs
 import time
 dum=Dirs(False)
-gio=Giovanna(False)
-gio.press(Inputs.s)
-time.sleep(0.25)
-gio.press(gio.dir.down, Inputs.hs)
-time.sleep(0.25)
-gio.flip()
-time.sleep(1.25)
-gio.press(Inputs.s)
-time.sleep(0.65)
-gio.press(Inputs.hs)
-time.sleep(0.25)
-gio.WA()
-time.sleep(0.15)
-gio.dash()
-time.sleep(0.05)
-gio.press(Inputs.k)
-time.sleep(0.55)
-gio.press(gio.dir.up, gio.dir.forward)
-time.sleep(0.02)
-gio.press(Inputs.s)
-time.sleep(0.25)
-gio.press(Inputs.d)
-time.sleep(0.2)
-gio.press(gio.dir.up, gio.dir.forward)
+pot=Potemkin(False)
+pot.hammerFall()

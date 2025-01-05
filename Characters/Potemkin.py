@@ -17,7 +17,7 @@ class Potemkin(Character):
     def slideHead(self):
         self.qcf(Inputs.s)
     def hammerFall(self):
-        for x in range(10):
+        for x in range(30):
             self.press(self.dir.back)
         self.press(self.dir.forward, Inputs.hs)
     def fdb(self):
